@@ -6,6 +6,13 @@ import router from './router'
 import 'lib-flexible'
 import axios from 'axios';
 import './assets/css/init.css'
+import store from './store'
+import Vuex from 'vuex'
+
+
+
+Vue.use(Vuex)
+
 
 Vue.config.productionTip = false;
 Vue.prototype.$ajax = axios;

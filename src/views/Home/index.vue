@@ -1,6 +1,9 @@
 <template>
   <div>
-    haha
+    <div>
+      haha
+    </div>
+    <button>1</button>
   </div>
 </template>
 
@@ -17,6 +20,7 @@
     },
     created() {
       this.init();
+      
     },
     methods: {
       init() {
@@ -36,5 +40,6 @@
     width: 100px;
     height: 100px;
     background: pink;
+    font-size: 10px;
   }
 </style>
