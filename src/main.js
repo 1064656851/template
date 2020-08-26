@@ -3,8 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import 'lib-flexible'
+import axios from 'axios';
+import './assets/css/init.css'
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
+Vue.prototype.$ajax = axios;
+
+
 
 /* eslint-disable no-new */
 new Vue({

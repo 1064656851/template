@@ -10,7 +10,21 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      // 全局
+      '/api': {
+        // 目标服务器地址
+        target: 'http://192.168.0.40/',
+        pathRewrite: { '^/api': '' },
+        changeOrigin: true
+      },
+      // '/upload': {
+      //   // 目标服务器地址
+      //   target: 'http://192.168.0.180:9902',
+      //   pathRewrite: { '^/': '' },
+      //   changeOrigin: true
+      // },
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
@@ -20,7 +34,7 @@ module.exports = {
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
 
-    
+
     /**
      * Source Maps
      */
