@@ -22,6 +22,7 @@ Vue.prototype.$ajax = axios;
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  store,
   router,
   components: { App },
   template: '<App/>'
