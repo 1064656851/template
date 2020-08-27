@@ -4,7 +4,7 @@
       <ul class="list_first">
         <li>
           <div class="list_lr">
-            <img class="head" src="../../assets/img/head.png" alt="">
+            <img class="head" :src="list[1].palyer_pic" alt="">
             <img class="img_tag" src="../../assets/img/crown_silver.png" alt="">
           </div>
           <p>{{list[1].name}}</p>
@@ -12,7 +12,7 @@
         </li>
         <li>
           <div>
-            <img class="headcenter" src="../../assets/img/head.png" alt="">
+            <img class="headcenter" :src="list[0].palyer_pic" alt="">
             <img class="img_taga" src="../../assets/img/crown_gold.png" alt="">
           </div>
 
@@ -21,7 +21,7 @@
         </li>
         <li>
           <div class="list_lr">
-            <img class="head" src="../../assets/img/head.png" alt="">
+            <img class="head" :src="list[2].palyer_pic" alt="">
             <img class="img_tag" src="../../assets/img/crown_bronze.png" alt="">
           </div>
           <p>{{list[2].name}}</p>
@@ -34,7 +34,7 @@
         <li>
           <i>4</i>
           <div class="list_last_content">
-            <img src="../../assets/img/banner.jpeg" alt="">
+            <img class="head" :src="list[3].palyer_pic" alt="">
             <div>
               <p>{{list[3].name}}</p>
               <span>{{list[3].xxa}}票</span>
@@ -44,7 +44,8 @@
         <li>
           <i>5</i>
           <div class="list_last_content">
-            <img src="../../assets/img/banner.png" alt="">
+            <img class="head" :src="list[4].palyer_pic" alt="">
+
             <div>
               <p>{{list[4].name}}</p>
               <span>{{list[4].xxa}}票</span>
@@ -54,7 +55,8 @@
         <li>
           <i>6</i>
           <div class="list_last_content">
-            <img src="../../assets/img/banner.png" alt="">
+            <img class="head" :src="list[5].palyer_pic" alt="">
+
             <div>
               <p>{{list[5].name}}</p>
               <span>{{list[5].xxa}}票</span>
