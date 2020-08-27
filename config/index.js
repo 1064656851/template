@@ -14,7 +14,8 @@ module.exports = {
       // 全局
       '/api': {
         // 目标服务器地址
-        target: 'http://192.168.0.40/',
+        // target: 'http://192.168.0.38/',
+        target:'http://www.kutoupiaopt.com/ktp_boot/',
         pathRewrite: { '^/api': '' },
         changeOrigin: true
       },
@@ -63,7 +64,7 @@ module.exports = {
      * Source Maps
      */
 
-    productionSourceMap: true,
+    productionSourceMap: false,
     // https://webpack.js.org/configuration/devtool/#production
     devtool: '#source-map',
 

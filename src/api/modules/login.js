@@ -3,11 +3,11 @@ import requestURL from '../requestUrl'
 import requestParam from '../requestParam'
 import Qs from 'qs'
 
-//投票列表
-export function insert(params) {
+//登陆
+export function login(params) {
   return request({
     method: 'post',
-    url: requestURL('/dx/vt'),
+    url: requestURL('/bs/dx'),
     headers: {
       'content-type': 'application/x-www-form-urlencoded'
     },
@@ -15,23 +15,11 @@ export function insert(params) {
   })
 }
 
-//投票
-export function myd(params) {
+//验证码
+export function verifi(params) {
   return request({
     method: 'post',
-    url: requestURL('/bp/myd'),
-    headers: {
-      'content-type': 'application/x-www-form-urlencoded'
-    },
-    data: Qs.stringify(params)
-  })
-}
-
-//排行榜
-export function phb(params) {
-  return request({
-    method: 'post',
-    url: requestURL('/dx/phb'),
+    url: requestURL('/v1/api/code'),
     headers: {
       'content-type': 'application/x-www-form-urlencoded'
     },
