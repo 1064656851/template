@@ -15,21 +15,21 @@ import 'vant/lib/index.css';
 Vue.use(Vant);
 Vue.use(Vuex)
 
-router.beforeEach((to, from, next) => {
-  //我在这里模仿了一个获取用户信息的方法
-  let isLogin = window.localStorage.getItem('userid');
-  if (isLogin) {
-    //如果用户信息存在则往下执行。
-    next()
-  } else {
-    //如果用户token不存在则跳转到login页面
-    if (to.path === '/login') {
-      next()
-    } else {
-      next('/login')
-    }
-  }
-})
+// router.beforeEach((to, from, next) => {
+//   //我在这里模仿了一个获取用户信息的方法
+//   let isLogin = window.localStorage.getItem('userid');
+//   if (isLogin) {
+//     //如果用户信息存在则往下执行。
+//     next()
+//   } else {
+//     //如果用户token不存在则跳转到login页面
+//     if (to.path === '/login') {
+//       next()
+//     } else {
+//       next('/login')
+//     }
+//   }
+// })
 
 
 Vue.config.productionTip = false;

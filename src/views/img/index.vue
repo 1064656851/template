@@ -1,7 +1,7 @@
 <template>
   <div>
     <van-nav-bar title="详情内容" left-text="返回" left-arrow @click-left="onClickLeft" />
-    <div class="warp" v-if="id==1">
+    <div class="warp" v-if="id==2020080101">
       <h3>南山区教育局法治建设工作报告</h3>
       <span>2020-08-26 17:50来源</span>
       <i>深圳市南山区教育局</i>
@@ -122,7 +122,7 @@
 
 
 
-    <div class="warp" v-else-if="id==2">
+    <div class="warp" v-else-if="id==2020080102">
       <h3>南山区人力资源局“七五” 普法工作自评报告</h3>
       <span>2020-08-26 17:46来源</span>
       <i>南山区人力资源局</i>
@@ -169,7 +169,7 @@
 
 
 
-    <div class="warp" v-else-if="id==3">
+    <div class="warp" v-else-if="id==2020080103">
       <h3>南山区住房和建设局关于“七五”普法工作 的自评报告</h3>
       <span>2020-08-26 18:01来源</span>
       <i>南山区住房和建设局</i>
@@ -219,7 +219,7 @@
         </p>
       </div>
     </div>
-    <div class="warp" v-else-if="id==4">
+    <div class="warp" v-else-if="id==2020080104">
       <h3>南山区应急管理局关于落实“谁执法谁普法”工作履职自评报告</h3>
       <span>2020-08-26 17:57来源</span>
       <i>深圳市南山区应急管理局</i>
@@ -283,7 +283,7 @@
         </p>
       </div>
     </div>
-    <div class="warp" v-else-if="id==5">
+    <div class="warp" v-else-if="id==2020080105">
       <h3>南山区政务服务数据管理局普法工作自评报告</h3>
       <span>2020-08-26 17:42来源</span>
       <i>深圳市南山区政务服务数据管理局</i>
@@ -344,7 +344,7 @@
         </p>
       </div>
     </div>
-    <div class="warp" v-else-if="id==6">
+    <div class="warp" v-else-if="id==2020080106">
       <h3>南山区规划土地监察局关于“七五”普法 工作的自查报告</h3>
       <span>2020-08-26 17:53来源</span>
       <i>深圳市南山区规划土地监察局</i>

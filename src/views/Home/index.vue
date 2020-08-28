@@ -2,8 +2,9 @@
   <div class="warp">
     <img class="banner" src="../../assets/img/banner.jpeg" alt="">
     <div class="timeWarp">
-      <img class="time" src="../../assets/img/huodong.png" alt="">
-      <p class="date">2020年12月12号</p>
+      <!-- <img class="time" src="../../assets/img/huodong.png" alt=""> -->
+      <img class="time" src="../../assets/img/huodong.jpg" alt="">
+      <h2 class="date">2020年8月31号~2020年9月6号</h2>
     </div>
 
 
@@ -48,18 +49,24 @@
     data() {
       return {
         show: false,
-        showone:true
+        showone: true,
+        
       }
     },
-
-mounted() {
-  this.show=true
-},
+    created() {
+      
+    },
+    mounted() {
+      this.show = true
+    },
     methods: {
+      
       handToBottom() {
         this.show = true;
       },
     }
+
+
   }
 </script>
 
@@ -95,6 +102,7 @@ mounted() {
     bottom: 20px;
     left: 50%;
     margin-left: -100px;
+    font-size: 12px;
   }
 
   .btn {

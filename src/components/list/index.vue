@@ -52,9 +52,9 @@
             </div>
           </div>
         </li>
-        <li>
+        <li class="li_last">
           <i>6</i>
-          <div class="list_last_content">
+          <div class="list_last_content" style="border: none;">
             <img class="head" :src="list[5].palyer_pic" alt="">
 
             <div>
@@ -99,6 +99,7 @@
   .list_warp {
     padding: 10px;
     background: #e1f1ff;
+    padding-top: 0;
   }
 
   .warp {
@@ -172,7 +173,7 @@
     width: 70px;
     height: 90px;
   }
-
+.list_last{margin-bottom: 100px;padding-bottom: 5px;}
   .list_last li {
     display: flex;
     align-items: center;

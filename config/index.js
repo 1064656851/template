@@ -9,13 +9,13 @@ module.exports = {
 
     // Paths
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: './',
     proxyTable: {
       // 全局
       '/api': {
         // 目标服务器地址
         // target: 'http://192.168.0.38/',
-        target:'http://www.kutoupiaopt.com/ktp_boot/',
+        target:'http://www.kutoupiaopt.com/api/',
         pathRewrite: { '^/api': '' },
         changeOrigin: true
       },
@@ -58,8 +58,12 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    // assetsPublicPath: '/',
 
+
+   
+    
+    assetsPublicPath: '/vote/',
     /**
      * Source Maps
      */
