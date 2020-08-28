@@ -8,7 +8,7 @@
         <span class="contentspan" @click="handToPath(item.palyer_id)">查看履职报告>>></span>
         <div class="tbsm">
           <span>满意 {{item.xxa}}票</span>
-          <span>{{item.xxb}}票 一般</span>
+          <span>一般 {{item.xxb}}票</span>
         </div>
         <div class="list_btn">
           <span @click="handToMy(index)" :class="tpList.tpxq[index].i=='t'?'':'list_span_last'">满意</span>
@@ -120,6 +120,7 @@ ready: function() {
             // message: '弹窗内容',
           }).then(() => {});
         } else {
+          this.tpList.id=this.$store.state.login.userid
           API.home.myd({
             json: JSON.stringify(this.tpList)
           }).then(data => {
