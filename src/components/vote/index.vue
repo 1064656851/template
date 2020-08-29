@@ -11,8 +11,13 @@
           <span>一般 {{item.xxb}}票</span>
         </div>
         <div class="list_btn">
+          <!--
           <span @click="handToMy(index)" :class="tpList.tpxq[index].i=='t'?'':'list_span_last'">满意</span>
-          <span @click="handToYb(index)" :class="tpList.tpxq[index].i=='y'?'':'list_span_last'">一般</span>
+          <span class="list_btn_last" @click="handToYb(index)" :class="tpList.tpxq[index].i=='y'?'':'list_span_last'">一般</span>
+          -->
+          <span class="list_btn_first" @click="handToMy(index)" :id="tpList.tpxq[index].i=='t'?'changea':''">满意</span>
+          <span @click="handToYb(index)" :id="tpList.tpxq[index].i=='y'?'changea':''">一般</span>
+
         </div>
       </li>
     </ul>
@@ -80,7 +85,7 @@
           }
         })
       },
-ready: function() {
+      ready: function() {
         //获取本地IP地址
         //js 引入 <!-- 获取本机ip  -->
         //<script src="http://pv.sohu.com/cityjson?ie=utf-8">
@@ -120,7 +125,7 @@ ready: function() {
             // message: '弹窗内容',
           }).then(() => {});
         } else {
-          this.tpList.id=this.$store.state.login.userid
+          this.tpList.id = this.$store.state.login.userid
           API.home.myd({
             json: JSON.stringify(this.tpList)
           }).then(data => {
@@ -145,6 +150,11 @@ ready: function() {
 </script>
 
 <style scoped>
+  #changea {
+    /* background: #88befd; */
+    background: #2a8de9;
+  }
+.list_btn_first{margin-right: 5px;}
   .list {
     display: flex;
     flex-wrap: wrap;
@@ -172,7 +182,9 @@ ready: function() {
 
   .tbsm span {
     font-size: 10px;
+    width: 100%;
     color: #ffffff;
+    text-align: center;
   }
 
   .list li {
@@ -204,7 +216,8 @@ ready: function() {
     text-align: center;
     font-size: 12px;
     height: 25px;
-    background-color: #2a8de9;
+    /* background-color: #2a8de9; */
+    background: #88befd;
     line-height: 25px;
     color: #ffffff;
   }
@@ -217,6 +230,8 @@ ready: function() {
 
   .list_btn .list_span_last {
     background-color: #d8d8d8;
+    transition: all 0.5s ease;
+    margin-left: 5px;
   }
 
   .contentp {
@@ -242,4 +257,6 @@ ready: function() {
     background: #1989FA;
     border: none;
   }
+
+  /* .list_btn_last{margin-left: 5px;} */
 </style>

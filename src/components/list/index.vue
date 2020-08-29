@@ -113,7 +113,9 @@
     padding-top: 20px;
     height: 50px;
   }
-
+.list_first li{
+  flex: 1;font-size: 5px;
+}
   .list_first {
     display: flex;
     justify-content: space-around;

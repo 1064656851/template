@@ -4,7 +4,7 @@
     <div class="timeWarp">
       <!-- <img class="time" src="../../assets/img/huodong.png" alt=""> -->
       <img class="time" src="../../assets/img/huodong.jpg" alt="">
-      <h2 class="date">2020年8月31号~2020年9月6号</h2>
+      <h2 class="date">2020年8月31号~2020年9月4号</h2>
     </div>
 
 
@@ -15,20 +15,21 @@
       <!-- <div class="btn_a">投票</div> -->
       <!-- <div class="btn_b">排行榜</div> -->
     </div>
+
+
     <div class="bottom_prompt" @click="handToBottom">
       <p class="">活动规则</p>
+
     </div>
 
 
     <van-popup class="pop" v-model="show">
-      <p class="pop_title">活动规则</p>
+      <p class="pop_title">投票规则：</p>
       <br>
       <div>
-        1.本次网络投票活动遵循公开、公平、公正原则，候选选手排名不分先后。
-      </div>
+        1.本次网络投票活动遵循公开、公平、公正原则，候选选手排名不分先后。 </div>
       <div>
-        2.每个微信号每天可以投一次，每次需要给六家单位的满意度都做出选择，才能提交。
-      </div>
+        2.每个微信号每天可以投票一次，每次需要对六家单位的满意度都做出评价，才能提交。 </div>
       <div>
         3.严禁刷票，一旦发现刷票等作弊现象，将取消参选资格。
       </div>
@@ -37,6 +38,7 @@
       </div>
     </van-popup>
     <router-view></router-view>
+<p class="jszc">技术支持：酷投票</p>
   </div>
 </template>
 
@@ -50,17 +52,17 @@
       return {
         show: false,
         showone: true,
-        
+
       }
     },
     created() {
-      
+
     },
     mounted() {
       this.show = true
     },
     methods: {
-      
+
       handToBottom() {
         this.show = true;
       },
@@ -78,7 +80,7 @@
 
   .banner {
     width: 100%;
-    height: 200px;
+    /* height: 200px; */
   }
 
   .time {
@@ -103,6 +105,8 @@
     left: 50%;
     margin-left: -100px;
     font-size: 12px;
+    width: 200px;
+    text-align: center;
   }
 
   .btn {
@@ -171,5 +175,9 @@
 
   .pop div {
     margin: 0 10px 10px 10px;
+  }
+
+  .jszc{
+   padding-bottom: 50px;margin-top: -80px;text-align: center;font-size: 10px;color: #4f5462;
   }
 </style>
